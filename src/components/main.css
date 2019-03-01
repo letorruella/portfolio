@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 10px/16px  =  65.5% > 1rem = 10px*/ }
+
+body {
+  font-family:'Slabo 27px', serif;
+  font-size: 1.6rem;
+  /* Default Font Size*/ 
+}
+
+/* Main content */
+main{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+
+  height: 95vh;
+  
+}
+
+@media only screen and (max-width: 45rem) {
+  /**
+   Fix Iphone below plus
+   Raise above
+   show description
+  **/
+  .main__wrapper h1{
+    font-size: 4rem;
+    
+  }
+  
+}
+.main__wrapper{
+   padding: 5rem;
+   width:95vw;
+   
+
+}
+.main__wrapper h1{
+  font-size: 9rem;
+}
+
+.main__wrapper p{
+  font-size:2.5rem;
+  color: #4e4e4e;
+}
