@@ -38,10 +38,8 @@ nav link:hover{
   display: flex;
   align-items: center;
   flex-flow: column;
-  justify-content: center;
-  height: 75vh;
-  
-  
+  margin-top:5rem; 
+  height: 95vh; 
 }
 
 @media only screen and (max-width: 650px) {
@@ -57,7 +55,7 @@ nav link:hover{
   .main__wrapper h1{
     font-size: 6rem !important;
   }
- 
+  
   
 }
 .main__wrapper{
@@ -84,34 +82,15 @@ hr{
 /***  PORTFOLIO CONTAINER  ****/
 
 .portfolio{
-  margin: 3rem;
-  margin: auto;
-  max-width: 650px;
-}
-
-
-hr{
-  margin-bottom: 8rem;
-  margin: auto;
-}
-
-
-.portfolio_container{
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr) ;
-  grid-template-rows: 30% 100%; 
-  height: 55vh;
  
 }
-.portfolio_left{
 
-  grid-row: 2/3;
+.portfolio_container:nth-child(odd){ 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-template-rows: 95vh;
+  grid-gap: 5rem;
 }
-.portfolio_right{
-  grid-row:2/3; 
-}
-
 
 .portfolio_container h1{
   font-size: 6rem;
@@ -120,18 +99,29 @@ hr{
   margin-right:1rem;  
 }
 .portfolio_container p{
-  margin:1rem; 
+  max-width: 400px;
 }
-
+.portfolio a{
+  color: #aaaaaa;
+}
 .portfolio_container .tags a{
-  margin: 1rem;
+
   color: #FF9E9E;
-  font-size:2.5rem;
+  font-size:1.5rem;
+}
+.tags{
+  margin-top:1.5rem; 
+}
+.tags a:nth-child(n+3){
+  margin-left: 3rem;
 }
 
 .portfolio_container .img-container{
 background: rgb(255,158,158);
-background: linear-gradient(180deg, rgba(255,158,158,1) 0%, rgba(254,214,214,1) 100%);
-height: 75%;
+
+background: linear-gradient(to bottom, #ee9ca7de, #ffdde1bc), url(../images/neighborhood.png);
+background-size: cover; 
+background-position: center;
+height: 95vh;
 width: 100%;
 }
