@@ -38,6 +38,7 @@ module.exports = {
         //icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     }, 
+    /*
     {resolve: "gatsby-source-wordpress",
     options: {
       
@@ -67,20 +68,20 @@ module.exports = {
       },
       concurrentRequests: 10,
       includedRoutes: [
-        "**/categories",
-        "**/posts",
-        "**/pages",
-        "**/media",
-        "**/tags",
-        "**/taxonomies",
-        "**/users",
+        "**categories",
+        "**posts",
+        "**pages",
+        "**media",
+        "**tags",
+        "**taxonomies",
+        "**users",
       ],
-      excludedRoutes: ["**/posts/1456"],
+      excludedRoutes: ["*posts/1456"],
       normalizer: function({ entities }) {
         return entities
       },
     }
-  },
+    }*/ 
   {
     resolve: 'gatsby-plugin-web-font-loader',
     options: {

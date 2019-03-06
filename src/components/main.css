@@ -81,26 +81,42 @@ hr{
 
 /***  PORTFOLIO CONTAINER  ****/
 
-.portfolio{
- 
-}
-
-.portfolio_container:nth-child(odd){ 
+.portfolio_container:nth-child(even){
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-  grid-template-rows: 95vh;
+  direction: rtl;
+  grid-column-gap: 50px;
   grid-gap: 5rem;
+  height: 95vh;
 }
 
+.portfolio_container{ 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-gap: 5rem;
+  grid-column-gap: 50px;
+  height: 95vh;
+}
+
+
+
 .portfolio_container h1{
-  font-size: 6rem;
+  font-size: 4rem;
   margin-bottom:5rem; 
   margin-left:1rem;
   margin-right:1rem;  
 }
 .portfolio_container p{
   max-width: 400px;
+ 
+  margin-left: 0;
 }
+
+.portfolio_container p:nth-child(even){
+  max-width: 400px;
+
+}
+
 .portfolio a{
   color: #aaaaaa;
 }
@@ -119,10 +135,12 @@ hr{
 }
 
 .portfolio_container img{
+background-color: red;  
 filter: grayscale(100%);
 background-size: cover; 
 background-position: center;
-height: 95vh;
-width: 100%;
+width: 45vw;
+height: 75%;
 object-fit: cover;
+ 
 }
