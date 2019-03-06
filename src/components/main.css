@@ -105,8 +105,10 @@ hr{
   color: #aaaaaa;
 }
 .portfolio_container .tags a{
-
-  color: #FF9E9E;
+    
+  padding: .5rem;
+  background-color: #FDE2E2;
+  color: #000000;
   font-size:1.5rem;
 }
 .tags{
@@ -116,12 +118,11 @@ hr{
   margin-left: 3rem;
 }
 
-.portfolio_container .img-container{
-background: rgb(255,158,158);
-
-background: linear-gradient(to bottom, #ee9ca7de, #ffdde1bc), url(../images/neighborhood.png);
+.portfolio_container img{
+filter: grayscale(100%);
 background-size: cover; 
 background-position: center;
 height: 95vh;
 width: 100%;
+object-fit: cover;
 }
