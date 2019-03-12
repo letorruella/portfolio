@@ -1,19 +1,18 @@
 import PropTypes from "prop-types"
 import React from "react"
 import neighborhood from '../images/neighborhood.png';
-import freeloader from '../images/freeloader.png';
 import myreads from '../images/myreads.png';
 
 
 const Portfolio = ({ siteTitle, portfolios, data }) => (
   <portfolio class="portfolio">
    
-      {portfolios.map(portfolio => (
-         <section class="portfolio_container">
-        <div class="portfolio_info">
+      {portfolios.map((portfolio, index )=> (
+         <section class="portfolio_container" id={`portfolio-${index}`}>
           <h1>{portfolio.title}</h1>
+        <div class="portfolio_info">
           <p>{portfolio.desc}</p>
-          <a href={portfolio.source}>source.</a>
+          <a class="source" href={portfolio.source}>source.</a>
           <div class="tags">
             <br />
             {portfolio.tags.map(t => (
@@ -21,10 +20,10 @@ const Portfolio = ({ siteTitle, portfolios, data }) => (
             ))}
           </div>
         </div>
-        <div class="portfolio_image">
+     
         
-              <img  src={portfolio.img}/>
-        </div>
+        <img  src={portfolio.img}/>
+  
         </section>
       ))}
   </portfolio>
@@ -47,7 +46,7 @@ Portfolio.defaultProps = {
       img: neighborhood,
   
     },
-    {
+    /*{
       title: "-My Reads.",
       desc: `Thanks to react I was able to make an SPA that chnages based of the data given, 
       The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
@@ -55,7 +54,7 @@ Portfolio.defaultProps = {
       tags: ["React", "Reactrouter", "Create React App"],
       source: "https://github.com/letorruella/my-reads",
       img:myreads,
-    },
+    },*/
   ],
 }
 

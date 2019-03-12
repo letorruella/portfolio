@@ -20,27 +20,32 @@ const IndexPage = () => (
       ]}
     />
     <div>
+        {/*
       <nav class="nav">
         <Link class="link" to="/resume">
           {" "}
           Resume.{" "}
         </Link>
         <br />
-        <Link class="link" to="/resume">
+       <Link class="link" to="/resume">
           {" "}
           Portfolio.{" "}
         </Link>
         <br />
-        <Link class="link" to="/resume">
+       <Link class="link" to="/resume">
           {" "}
           Blog.{" "}
-        </Link>
-      </nav>
+    </Link> 
+      </nav>*/}
+      <div>
+        <a class="portfolio-dots" href="#portfolio-0">.</a>
+        <a class="portfolio-dots" href="#portfolio-0">.</a>
+      </div>
       <div class="main">
+      
         <div class="main__wrapper">
           <h1>Luis Torruella.</h1>
           <p> I help companies make the best products in the web. </p>
-        
         </div>
         <hr/>
       </div>
