@@ -17,15 +17,7 @@ body {
   /* Default Font Size*/ 
 }
 
-.portfolio-dots {
-  display: inline-block;
-  font-size: 15rem;
-  color: lightgray;
-  text-decoration: none;
-}
-.portfolio-dots:hover{
-  color: black;
-}
+
 
 /** NAV **/
 nav{
@@ -45,41 +37,34 @@ nav link:hover{
 }
 
 /* Main content */
+
+
 .main{
-  display: flex;
-  align-items: center;
-  flex-flow: column;
-  margin-top:5rem; 
-  height: 85vh; 
+  height: 75vh;
 }
 
 
-
-
-
-.main__wrapper{
-   padding: 5rem;
-
-   max-width: 80%;
-   
+.main-container{
+  display: grid;
+  grid-template-columns: 10% 80%  10%;
+  margin-top:15rem; 
+  margin-bottom:10rem; 
 }
-.main__wrapper h1{
+
+.main-container_title{
+  grid-column: 2/2;
+  margin: auto;
+  padding: .3rem;
   font-size: 9rem;
+  
 }
-
-.main__wrapper p{
-  font-size:2.5rem;
-  color: #4e4e4e;
+.main-container_subtitle{
+  grid-column: 2/2;
+  font-size: 2.5rem;
+  margin: auto;
+  padding: 1rem;
+  color: rgb(107, 107, 107);
 }
-hr{
-  align-self: flex-end;
-}
-
-
-
-/** MEDIA QUERY  **/
-
-
 
 
 /***  PORTFOLIO CONTAINER  ****/
@@ -87,13 +72,14 @@ hr{
 
 .portfolio_container{ 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 2rem;
   height: 95vh;
+  margin-bottom: 25vh;
 }
 
-.portfolio_container h1{
+.portfolio_container-title{
   grid-column: 1/2;
   font-size: 5rem;
 }
@@ -138,45 +124,37 @@ img{
 }
 
 
+/** Media Queries **/
 
 
-@media (max-width: 550px) {
-  .margin{
-    padding: 0;
-  }
+@media (max-width: 540px) {
+
+
   .portfolio_container{
-    grid-gap: 0;
-
-  }
-
-
-  .portfolio_container h1{
-    grid-column: 1/-1;
-    text-align: center;
-    font-size: 13vw;
-  }
-  
-  .portfolio_info{
-  grid-column:1/3; 
-  font-size: 4.5vw;
-  padding-right:1.5rem; 
-  }
-
-  .portfolio_container img{
-    grid-row-start: 2;
-    grid-column: 3/-1;
-    height: 90%;
+    grid-row-gap: 1rem;
     
   }
 
+  .portfolio_container-title{
+    grid-gap: 0;
+    grid-column: 1/-1;
+    text-align: center;
 
- .tags{
-  flex-flow: column;
-  
- }
- .tags a {
-  margin-bottom: .3rem;
- }
-  
+  }
+  .portfolio_info{
+    grid-column: 1/-1;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  img{
+    filter: grayscale(100%);
+    grid-column: 1/-1; 
+    grid-row: 3/-1;
+    height: 55vh;
+   
+  }
+
+
 }
 

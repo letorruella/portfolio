@@ -37,18 +37,14 @@ const IndexPage = () => (
           Blog.{" "}
     </Link> 
       </nav>*/}
-      <div>
-        <a class="portfolio-dots" href="#portfolio-0">.</a>
-        <a class="portfolio-dots" href="#portfolio-0">.</a>
+     <div class="main">
+      <div class="main-container">
+          <h1 class="main-container_title">Luis Torruella.</h1>
+          <p class="main-container_subtitle"> I help companies make the best products in the web </p>
       </div>
-      <div class="main">
+    
+      </div>
       
-        <div class="main__wrapper">
-          <h1>Luis Torruella.</h1>
-          <p> I help companies make the best products in the web. </p>
-        </div>
-        <hr/>
-      </div>
       
 
       <Portfolio />
