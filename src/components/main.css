@@ -152,6 +152,7 @@ img{
 }
 .footer-info{
   grid-column: 10/-1;
+  padding-right:3rem ;
 }
 
 
