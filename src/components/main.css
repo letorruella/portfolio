@@ -40,8 +40,9 @@ nav link:hover{
 
 
 .main{
-  height: 75vh;
+  height: 65vh;
 }
+
 
 
 .main-container{
@@ -67,6 +68,7 @@ nav link:hover{
 }
 
 
+
 /***  PORTFOLIO CONTAINER  ****/
 
 
@@ -76,16 +78,18 @@ nav link:hover{
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 2rem;
   height: 95vh;
-  margin-bottom: 25vh;
+  margin-bottom: 15vh;
 }
 
 .portfolio_container-title{
-  grid-column: 1/2;
+  grid-column: 2/3;
+ 
   font-size: 5rem;
+  text-align: center;
 }
 
 .portfolio_info{
-  grid-column: 1/1;
+  grid-column: 2/3;
   font-size: 2.5rem;
 }
 .portfolio_info .source{
@@ -100,10 +104,12 @@ nav link:hover{
 .portfolio_container .tags a{
   width: 70%;  
   padding: .5rem;
+  margin-top:1rem; 
   background-color: #FDE2E2;
   color: #000000;
-  font-size:1.5rem;
+  font-size:2rem;
   margin-right:2rem; 
+  width: 110px;
 }
 .tags{
   display: flex;
@@ -112,7 +118,7 @@ nav link:hover{
 
 img{
   filter: grayscale(100%);
-  grid-column: 2/-1; 
+  grid-column: 4/-1; 
   grid-row: 1/-1;
   background-size: cover; 
   background-position: center;
@@ -123,15 +129,61 @@ img{
  
 }
 
+/**  EVEN PORTFOLIO ITEMS**/
+
+
+.portfolio_container:nth-child(even) > .portfolio_container-title {
+  grid-column: 4/-1;
+
+}
+.portfolio_container:nth-child(even) > .portfolio_info{
+  grid-column: 5/-2;
+}
+
+.portfolio_container:nth-child(even) > img{
+  grid-column: 1/4;
+}
+
+
+/** FOOTER **/
+.footer{
+  display: grid;
+  grid-template-columns: repeat(11,1fr);
+}
+.footer-info{
+  grid-column: 10/-1;
+}
+
+
 
 /** Media Queries **/
 
 
-@media (max-width: 540px) {
-
+@media (max-width: 600px) {
+  .main{
+    
+    height: 65vh;;
+    grid-template-columns: 100%;
+    grid-gap: 0;
+   
+  }
+  .main-container{
+    grid-column: 0/-1;
+    margin-top: 10rem;
+  }
+.main-container_title{
+  font-size: 7rem;
+  padding: 0;
+}
+  
+  .main-container_subtitle{
+    font-size: 2.5rem;
+    padding: 0;
+  }
 
   .portfolio_container{
     grid-row-gap: 1rem;
+    margin-bottom:45vh; 
     
   }
 
@@ -155,6 +207,28 @@ img{
    
   }
 
+  /***EVEN***/
+
+  .portfolio_container:nth-child(even) > .portfolio_container-title {
+    grid-gap: 0;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .portfolio_container:nth-child(even) > .portfolio_info{
+    grid-column: 1/-1;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .portfolio_container:nth-child(even) > img{
+    filter: grayscale(100%);
+    grid-column: 1/-1; 
+    grid-row: 3/-1;
+    height: 55vh;
+  }
+  
+
+  
+
 
 }
-

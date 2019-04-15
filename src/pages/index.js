@@ -5,7 +5,8 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import Portfolio from "../components/portfolio"
-import { Link } from "gatsby"
+import Footer from "../components/footer"
+//import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
@@ -42,12 +43,13 @@ const IndexPage = () => (
           <h1 class="main-container_title">Luis Torruella.</h1>
           <p class="main-container_subtitle"> I help companies make the best products in the web </p>
       </div>
-    
+
       </div>
       
       
 
       <Portfolio />
+      <Footer />
     </div>
   </Layout>
 )

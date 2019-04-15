@@ -6,6 +6,7 @@ import myreads from "../images/myreads.png"
 const Portfolio = ({ siteTitle, portfolios, data }) => (
   <portfolio class="portfolio">
     {portfolios.map((portfolio, index) => (
+    
       <section class="portfolio_container" id={`portfolio-${index}`}>
         <h1 class="portfolio_container-title">{portfolio.title}</h1>
         <div class="portfolio_info">
@@ -19,11 +20,16 @@ const Portfolio = ({ siteTitle, portfolios, data }) => (
               <a class>{t}</a>
             ))}
           </div>
+          
         </div>
 
         <img src={portfolio.img} />
+      
       </section>
+  
+ 
     ))}
+   
   </portfolio>
 )
 
@@ -48,7 +54,25 @@ Portfolio.defaultProps = {
       desc: `Thanks to react I was able to make an SPA that chnages based of the data given, 
       The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
        shelves(read, curreltly reading, want to read).`,
-      tags: ["React", "Reactrouter", "Create React App"],
+      tags: ["React", "Reactrouter", "Custom API"],
+      source: "https://github.com/letorruella/my-reads",
+      img:myreads,
+    },
+    {
+      title: "-Freeloader.",
+      desc: `Thanks to react I was able to make an SPA that chnages based of the data given, 
+      The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
+       shelves(read, curreltly reading, want to read).`,
+      tags: ["React", "Reactrouter", "Custom API"],
+      source: "https://github.com/letorruella/my-reads",
+      img:myreads,
+    },
+    {
+      title: "-Tskrr.",
+      desc: `Thanks to react I was able to make an SPA that chnages based of the data given, 
+      The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
+       shelves(read, curreltly reading, want to read).`,
+      tags: ["React", "Reactrouter", "Custom API"],
       source: "https://github.com/letorruella/my-reads",
       img:myreads,
     },
