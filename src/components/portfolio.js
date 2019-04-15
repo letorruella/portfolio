@@ -41,7 +41,7 @@ Portfolio.defaultProps = {
   siteTitle: ``,
   portfolios: [
     {
-      title: "-Neighborhood.",
+      title: "Neighborhood.",
       desc: `Levarging the power of google maps and foursquare 
     to show the most interesting areas in my neightborhood.
     User have the ability to search and learn about this places.`,
@@ -50,7 +50,7 @@ Portfolio.defaultProps = {
       img: neighborhood,
     },
     {
-      title: "-My Reads.",
+      title: "My Reads.",
       desc: `Thanks to react I was able to make an SPA that chnages based of the data given, 
       The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
        shelves(read, curreltly reading, want to read).`,
@@ -59,7 +59,7 @@ Portfolio.defaultProps = {
       img:myreads,
     },
     {
-      title: "-Freeloader.",
+      title: "Freeloader.",
       desc: `Thanks to react I was able to make an SPA that chnages based of the data given, 
       The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
        shelves(read, curreltly reading, want to read).`,
@@ -68,7 +68,7 @@ Portfolio.defaultProps = {
       img:myreads,
     },
     {
-      title: "-Tskrr.",
+      title: "Tskrr.",
       desc: `Thanks to react I was able to make an SPA that chnages based of the data given, 
       The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
        shelves(read, curreltly reading, want to read).`,
