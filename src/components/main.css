@@ -148,11 +148,11 @@ img{
 /** FOOTER **/
 .footer{
   display: grid;
-  grid-template-columns: repeat(11,1fr);
+  grid-template-columns: repeat(5,1fr);
 }
 .footer-info{
-  grid-column: 10/-1;
-  padding-right:3rem ;
+  grid-column: 3/-1;
+  padding-right:5rem ;
 }
 
 
