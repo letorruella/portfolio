@@ -9,13 +9,21 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
+  - name: Blog
     label: Blog
     folder: "posts/blog"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
       - { name: body, label: Body, widget: markdown }
+
+  - name: Resume
+    label: Resume
+    folder: "posts/resume"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }    

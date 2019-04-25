@@ -6,9 +6,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Portfolio from "../components/portfolio"
 import Footer from "../components/footer"
+
+//import BGGraph from "../components/bg-graph"
 //import { Link } from "gatsby"
 
+
 const IndexPage = () => (
+
+
+
   <Layout>
     <SEO
       title=":)"
@@ -37,7 +43,11 @@ const IndexPage = () => (
           {" "}
           Blog.{" "}
     </Link> 
-      </nav>*/}
+      </nav>
+
+    <BGGraph />
+*/}
+  
      <div class="main">
       <div class="main-container">
           <h1 class="main-container_title">Luis Torruella.</h1>
@@ -49,6 +59,8 @@ const IndexPage = () => (
       
 
       <Portfolio />
+
+        
       <Footer />
     </div>
   </Layout>

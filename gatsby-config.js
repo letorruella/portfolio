@@ -8,13 +8,33 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Slabo+27px`,
+          },
+         
+        ],
+      },
+    },
+
+    /*{
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/posts/blog/`,
+        name: "markdown-pages",
+      },
+    }*/
+    `gatsby-transformer-remark`,
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: path.join(__dirname, `src`, `images`),
       },
     },
-  
+   `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
