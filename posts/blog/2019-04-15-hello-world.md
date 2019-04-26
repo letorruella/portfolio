@@ -1,6 +1,5 @@
 ---
-path: Hello World
-date: 2019-04-16T01:48:03.172Z
-title: Hello world
+title: Introduction Test Driven Development
+date: 2019-04-27T01:48:03.172Z
 ---
-Hello world
+If you are like me chances are you are constatly trying to work as a efficient as possible, heck, effieciency is why we own devices. We use smartphones to find information, services, production and distraction as quick as possible. Phew now that I think about it we have come a long way, back in my days we had to go to the libary to use a computer and now its it our pocket. Now thats progress.
