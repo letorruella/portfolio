@@ -3,7 +3,7 @@ backend:
   repo: letorruella/portfolio
 
 
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 media_folder: static/assets
 public_folder: assets
@@ -11,7 +11,7 @@ public_folder: assets
 collections:
   - name: Blog
     label: Blog
-    folder: "posts/blog"
+    folder: blog
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
@@ -21,7 +21,7 @@ collections:
 
   - name: Resume
     label: Resume
-    folder: "posts/resume"
+    folder: resume
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:

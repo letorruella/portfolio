@@ -1,4 +1,4 @@
-import React from "react"
+/*import React from "react"
 import { graphql } from "gatsby"
 
 export default function Template({
@@ -31,4 +31,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`*/
