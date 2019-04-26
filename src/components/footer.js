@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+
 //import PropTypes from "prop-types"
 import React from "react"
 
@@ -22,7 +22,7 @@ const Footer = ({ siteTitle }) => (
         </p>    
       
         <a
-          to="https://github.com/letorruella"
+          href="https://github.com/letorruella"
           style={{
             color: `blue`,
             textDecoration: `none`,

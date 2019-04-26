@@ -1,4 +1,4 @@
-/*const path = require("path")
+const path = require("path")
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -15,6 +15,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               path
+              title
             }
           }
         }
@@ -29,8 +30,10 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
-        context: {}, // additional data can be passed via context
+        context: {
+          title:node.frontmatter.title 
+        }  // additional data can be passed via context
       })
     })
   })
-}*/
+}

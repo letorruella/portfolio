@@ -1,19 +1,23 @@
 
 
 import React from "react"
-//import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-//import Template from "../templates/blogTemplate"
+import Template from "../templates/blogTemplate"
 import Footer from "../components/footer"
 //import { Link } from "gatsby"
 
 
 
-const BlogPage = () => (
-  <Layout>
+export default function BlogPage({
+
+})
+
+{return (  
+<Layout>
     <SEO
       title=":)"
       keywords={[
@@ -27,6 +31,8 @@ const BlogPage = () => (
   
    <Footer />
   </Layout>
-)
+  )}
 
-export default BlogPage
+
+
+

@@ -18,7 +18,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-source-wordpress": "^3.0.41",
-    "gatsby-transformer-remark": "^2.3.8",
+    "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.18",
     "google-fonts-plugin": "2.0.2",
     "netlify-cms": "^2.9.1",

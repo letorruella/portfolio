@@ -16,7 +16,7 @@ const Portfolio = ({ siteTitle, portfolios, data }) => (
         <h1 class="portfolio_container-title">{portfolio.title}</h1>
         <div class="portfolio_info">
           <p clas="portfolio_info-desc">{portfolio.desc}</p>
-          <a class="portfolio_info-source" href={portfolio.source.source}>
+          <a class="portfolio_info-source" href={portfolio.source.source} >
          { portfolio.source.type} 
           </a>
           <div class="tags">
@@ -28,7 +28,9 @@ const Portfolio = ({ siteTitle, portfolios, data }) => (
           
         </div>
 
-        <img  src={portfolio.img}/>     
+        <img 
+        alt={portfolio.title}
+        src={portfolio.img}/>     
 
               
       </section>
@@ -50,7 +52,7 @@ Portfolio.defaultProps = {
       title: "Tskrr.",
       desc: `What started as a basic backend for a "Uber Eats" clone for truckdrivers is getting developed further to show 
       potential employers and clients my abilities. A full fledge app built by me,  fullstack from Database to CSS`,
-      tags: ["Vue Cli", "Django", "Postgres", "Bullma"],
+      tags: ["vue cli", "django", "sass", "bullma"],
       source: {
         "type":"learn more",
         "source":"http://tskrr-app.herokuapp.com/"
@@ -63,7 +65,7 @@ Portfolio.defaultProps = {
       desc: `Freeloader is a platform that allows users(mainly) truck drivers access to information that is usually behind paywalls. 
      
       `,
-      tags: ["Django", "Nanobox", "Nginx", "Postgres"],
+      tags: ["django", "nanobox", "nginx", "postgres"],
       source:{
         "type":"learn more",
         "source":"http://freeloader.nanoapp.io"
@@ -86,7 +88,7 @@ Portfolio.defaultProps = {
       desc: `Thanks to react I was able to make an SPA that chnages based of the data given, 
       The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
        shelves(read, curreltly reading, want to read).`,
-      tags: ["React", "Reactrouter", "Custom API"],
+      tags: ["react", "reactrouter", "custom api"],
       source:{
         "type":"source",
         "source":"https://github.com/letorruella/myreads"

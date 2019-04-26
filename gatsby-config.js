@@ -29,13 +29,13 @@ module.exports = {
       },
     },
 
-    /*{
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/posts/blog/`,
-        name: "markdown-pages",
+        path: `${__dirname}/src/posts/blog/`,
+        name: "blog",
       },
-    }*/
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -44,7 +44,8 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-   `gatsby-plugin-netlify-cms`,
+    
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
