@@ -167,6 +167,11 @@ img{
   display: grid;
   grid-template-columns: repeat(5,1fr);
 }
+
+.footer a{
+  cursor: pointer;
+}
+
 .footer-info{
   grid-column: 3/-1;
   padding-right:5rem ;

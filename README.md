@@ -23,3 +23,6 @@ Navigate to `localhost:8000`
 * Perfomance
 * SEO
 * Resume
+* Images Perfomance
+* Bring Users ;)
+* Wakatime Graphs

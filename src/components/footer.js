@@ -21,7 +21,7 @@ const Footer = ({ siteTitle }) => (
         ©Luis Torruella 2037
         </p>    
       
-        <Link
+        <a
           to="https://github.com/letorruella"
           style={{
             color: `blue`,
@@ -29,17 +29,17 @@ const Footer = ({ siteTitle }) => (
           }}
         >
           github.com
-        </Link>
+        </a>
         <br/>
-        <Link
-          to="https://linkedin.com/in/letorruella"
+        <a
+          href="https://linkedin.com/in/letorruella"
           style={{
             color: `blue`,
             textDecoration: `none`,
           }}
         >
           linkedin.com
-        </Link>
+        </a>
      
     </div>
   </footer>

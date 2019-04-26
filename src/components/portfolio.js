@@ -1,9 +1,12 @@
 import PropTypes from "prop-types"
 import React from "react"
-import neighborhood from "../images/neighborhood.png"
-import myreads from "../images/myreads.png"
-import freeloader from '../images/freeloader.png'
-import tskrrr from '../images/tskrrr.png'
+import neighborhood from "../images/portfolio/neighborhood.png"
+import myreads from "../images/portfolio/myreads.png"
+import freeloader from '../images/portfolio/freeloader.png'
+import tskrrr from '../images/portfolio/tskrrr.png'
+
+//import Img from "gatsby-image"
+import { graphql } from 'gatsby';
 
 const Portfolio = ({ siteTitle, portfolios, data }) => (
   <portfolio class="portfolio">
@@ -25,8 +28,9 @@ const Portfolio = ({ siteTitle, portfolios, data }) => (
           
         </div>
 
-        <img src={portfolio.img} />
-      
+        <img  src={portfolio.img}/>     
+
+              
       </section>
   
  
@@ -44,12 +48,12 @@ Portfolio.defaultProps = {
   portfolios: [
     {
       title: "Tskrr.",
-      desc: `What started as a basic backend for a "Uber Eats" clone is getting developed further to show
-      employers and clients my abilities. A full fledge app built by me,  fullstack from Database to CSS`,
-      tags: ["Vue Cli", "Django", "Postgres","Heroku", "Bullma"],
+      desc: `What started as a basic backend for a "Uber Eats" clone for truckdrivers is getting developed further to show 
+      potential employers and clients my abilities. A full fledge app built by me,  fullstack from Database to CSS`,
+      tags: ["Vue Cli", "Django", "Postgres", "Bullma"],
       source: {
         "type":"learn more",
-        "source":"tskrr"
+        "source":"http://tskrr-app.herokuapp.com/"
       },
       img:tskrrr,
       status: "currently developing it"
@@ -62,7 +66,7 @@ Portfolio.defaultProps = {
       tags: ["Django", "Nanobox", "Nginx", "Postgres"],
       source:{
         "type":"learn more",
-        "source":"freeloader.nanobox.io"
+        "source":"http://freeloader.nanoapp.io"
       },
       img:freeloader,
     },
@@ -95,3 +99,18 @@ Portfolio.defaultProps = {
 }
 
 export default Portfolio
+
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "portfolio/catalog.jpeg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 125, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
