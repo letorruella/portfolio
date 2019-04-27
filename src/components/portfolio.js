@@ -85,7 +85,7 @@ Portfolio.defaultProps = {
     },
     {
       title: "My Reads.",
-      desc: `Thanks to react I was able to make an SPA that chnages based of the data given, 
+      desc: `Thanks to react I was able to make an SPA that changes based of the data given, 
       The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
        shelves(read, curreltly reading, want to read).`,
       tags: ["react", "reactrouter", "custom api"],
