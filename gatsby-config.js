@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: `Luis Torruella Web developer`,
-    description: `I help companies creeate the best products in the web`,
+    description: `I help companies create the best products in the web`,
     author: `Luis Enrique Torruella`,
   },
   plugins: [
@@ -28,7 +28,7 @@ module.exports = {
         ],
       },
     },
-/*
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -36,7 +36,7 @@ module.exports = {
         name: "blog",
       },
     },
- */ 
+
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,

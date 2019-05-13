@@ -1,4 +1,4 @@
-/*
+
 const path = require("path")
 
 exports.createPages = ({ actions, graphql }) => {
@@ -39,4 +39,3 @@ exports.createPages = ({ actions, graphql }) => {
     })
   })
 }
-*/

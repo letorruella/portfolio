@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: letorruella/portfolio
+
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: Blog
+    label: Blog
+    folder: blog
+    create: true
+    slug: "{{slug}}-{{month}}-{{day}}-{{year}}"
+    fields:
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: Resume
+    label: Resume
+    folder: resume
+    create: true
+    slug: "{{slug}}-{{month}}-{{day}}-{{year}}"
+    fields:
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }    
