@@ -1,4 +1,3 @@
-
 const path = require("path")
 
 exports.createPages = ({ actions, graphql }) => {
@@ -16,7 +15,6 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               path
-              title
             }
           }
         }
@@ -24,17 +22,14 @@ exports.createPages = ({ actions, graphql }) => {
     }
   `).then(result => {
     if (result.errors) {
-
       return Promise.reject(result.errors)
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path:  node.frontmatter.path,
+        path: node.frontmatter.path,
         component: blogPostTemplate,
-        context: {
-          title:node.frontmatter.title 
-        }  // additional data can be passed via context
+        context: {}, // additional data can be passed via context
       })
     })
   })
