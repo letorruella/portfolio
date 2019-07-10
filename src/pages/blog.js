@@ -23,7 +23,6 @@ export default function BlogPage({
       keywords={[
         `web developer`,
         `django developer`,
-        "wordpress",
         "vue",
         `react`,
       ]}
