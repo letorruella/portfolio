@@ -6,7 +6,8 @@ const Footer = ({ siteTitle }) => (
   <footer
   class="footer"
     style={{
-    
+      'position':'absolute',
+      'bottom':0,
       marginBottom: `1.45rem`,
     }}
   >
