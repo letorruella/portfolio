@@ -30,6 +30,7 @@ export default function BlogPage({
       ]}
     />
     <Nav/>
+    /* Postss?8/
    <Footer />
   </Layout>
   )}

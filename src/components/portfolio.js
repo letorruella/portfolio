@@ -9,7 +9,7 @@ import tskrrr from '../images/portfolio/tskrrr.png'
 import { graphql } from 'gatsby';
 
 const Portfolio = ({ siteTitle, portfolios, data }) => (
-  <portfolio class="portfolio">
+  <div class="portfolio">
     {portfolios.map((portfolio, index) => (
     
       <section class="portfolio_container" id={`portfolio-${index}`}>
@@ -38,7 +38,7 @@ const Portfolio = ({ siteTitle, portfolios, data }) => (
  
     ))}
    
-  </portfolio>
+  </div>
 )
 
 Portfolio.propTypes = {
