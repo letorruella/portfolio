@@ -10,15 +10,29 @@ const Footer = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
+  
+  <div
+  style={{
+    "width":"50%"
+  }}
+  >
+  <ul>
+    <li>Blog</li>
+    <li>Blog</li>
+    <li>Blog</li>
+  </ul>
+  
+  </div>
+  
     <div class="footer-info"
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        'width': "50%",
+        'text-align': 'right'
       }}
     >
         <p >
-        ©Luis Torruella 2037
+        made with :) <br/> by Luis Torruella 
         </p>    
       
         <a

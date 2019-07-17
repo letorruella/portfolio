@@ -162,8 +162,8 @@ img{
 
 /** FOOTER **/
 .footer{
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
+  max-width: 960px;
+  margin: auto;
 }
 
 .footer a{

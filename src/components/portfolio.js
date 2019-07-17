@@ -4,6 +4,7 @@ import neighborhood from "../images/portfolio/neighborhood.png"
 import myreads from "../images/portfolio/myreads.png"
 import freeloader from '../images/portfolio/freeloader.png'
 import tskrrr from '../images/portfolio/tskrrr.png'
+import agency from '../images/portfolio/11-agency.png'
 
 //import Img from "gatsby-image"
 import { graphql } from 'gatsby';
@@ -16,13 +17,15 @@ const Portfolio = ({ siteTitle, portfolios, data }) => (
         <h1 class="portfolio_container-title">{portfolio.title}</h1>
         <div class="portfolio_info">
           <p clas="portfolio_info-desc">{portfolio.desc}</p>
-          <a class="portfolio_info-source" href={portfolio.source.source} >
+          <a  class="portfolio_info-source" href={portfolio.source.source} >
          { portfolio.source.type} 
           </a>
           <div class="tags">
             <br />
             {portfolio.tags.map(t => (
-              <a class>{t}</a>
+              <a 
+              style={{ 'text-align':'center'  }}
+              >{t}</a>
             ))}
           </div>
           
@@ -48,6 +51,20 @@ Portfolio.propTypes = {
 Portfolio.defaultProps = {
   siteTitle: ``,
   portfolios: [
+    {
+      title: "Project 11",
+      desc: `
+      This is an exciting project that will give social infuencers the ability control their web presence.
+      The entire stack is serverlerss as I have made it my mission to simplify and enhance the delivery of the projects. 
+      Read my blog post on why you should start your project serverlerss on your next MVP`,
+      tags: ["vue cli",  "lambda", "api gateway", "dynamodb"],
+      source: {
+        "type":"learn more",
+        "source":"http://agency-11.netlify.com/"
+      },
+      img:agency,
+      status: "currently developing it"
+    },
     {
       title: "Tskrr.",
       desc: `What started as a basic backend for a "Uber Eats" clone for truckdrivers is getting developed further to show 
