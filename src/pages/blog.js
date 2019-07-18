@@ -1,5 +1,3 @@
-
-
 import React from "react"
 import { graphql } from "gatsby"
 
@@ -11,30 +9,22 @@ import Footer from "../components/footer"
 import Nav from "../components/nav"
 //import { Link } from "gatsby"
 
-
-
-export default function BlogPage({
-
-})
-
-{return (  
-<Layout>
-    <SEO
-      title=":)"
-      keywords={[
-        `web developer`,
-        `django developer`,
-        "wordpress",
-        "vue",
-        `react`,
-      ]}
-    />
-    <Nav/>
-    /* Postss?8/
-   <Footer />
-  </Layout>
-  )}
-
-
-
-
+export default function BlogPage({}) {
+  return (
+    <Layout>
+      <SEO
+        title=":)"
+        keywords={[
+          `web developer`,
+          `django developer`,
+          "wordpress",
+          "vue",
+          `react`,
+        ]}
+      />
+      <Nav />
+      /* Postss?8/
+      <Footer />
+    </Layout>
+  )
+}

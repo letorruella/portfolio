@@ -10,11 +10,7 @@ import Footer from "../components/footer"
 //import BGGraph from "../components/bg-graph"
 //import { Link } from "gatsby"
 
-
 const IndexPage = () => (
-
-
-
   <Layout>
     <SEO
       title=":)"
@@ -27,7 +23,7 @@ const IndexPage = () => (
       ]}
     />
     <div>
-        {/*
+      {/*
       <nav class="nav">
         <Link class="link" to="/resume">
           {" "}
@@ -47,20 +43,19 @@ const IndexPage = () => (
 
     <BGGraph />
 */}
-  
-     <div class="main">
-      <div class="main-container">
-          <h1 class="main-container_title">Luis Torruella.</h1>
-          <p class="main-container_subtitle"> I help companies make the best products in the web </p>
-      </div>
 
+      <div class="main">
+        <div class="main-container">
+          <h1 class="main-container_title">Luis Torruella.</h1>
+          <p class="main-container_subtitle">
+            {" "}
+            I help companies make the best products in the web{" "}
+          </p>
+        </div>
       </div>
-      
-      
 
       <Portfolio />
 
-        
       <Footer />
     </div>
   </Layout>

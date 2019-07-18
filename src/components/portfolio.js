@@ -2,45 +2,34 @@ import PropTypes from "prop-types"
 import React from "react"
 import neighborhood from "../images/portfolio/neighborhood.png"
 import myreads from "../images/portfolio/myreads.png"
-import freeloader from '../images/portfolio/freeloader.png'
-import tskrrr from '../images/portfolio/tskrrr.png'
-import agency from '../images/portfolio/11-agency.png'
+import freeloader from "../images/portfolio/freeloader.png"
+import tskrrr from "../images/portfolio/tskrrr.png"
+import agency from "../images/portfolio/11-agency.png"
 
-//import Img from "gatsby-image"
-import { graphql } from 'gatsby';
+//import Img from "gatsby-image"//
+//import { graphql } from 'gatsby';
 
 const Portfolio = ({ siteTitle, portfolios, data }) => (
   <div class="portfolio">
     {portfolios.map((portfolio, index) => (
-    
       <section class="portfolio_container" id={`portfolio-${index}`}>
         <h1 class="portfolio_container-title">{portfolio.title}</h1>
         <div class="portfolio_info">
           <p clas="portfolio_info-desc">{portfolio.desc}</p>
-          <a  class="portfolio_info-source" href={portfolio.source.source} >
-         { portfolio.source.type} 
+          <a class="portfolio_info-source" href={portfolio.source.source}>
+            {portfolio.source.type}
           </a>
           <div class="tags">
             <br />
             {portfolio.tags.map(t => (
-              <a 
-              style={{ 'text-align':'center'  }}
-              >{t}</a>
+              <a style={{ "text-align": "center" }}>{t}</a>
             ))}
           </div>
-          
         </div>
 
-        <img 
-        alt={portfolio.title}
-        src={portfolio.img}/>     
-
-              
+        <img alt={portfolio.title} src={portfolio.img} />
       </section>
-  
- 
     ))}
-   
   </div>
 )
 
@@ -57,13 +46,13 @@ Portfolio.defaultProps = {
       This is an exciting project that will give social infuencers the ability control their web presence.
       The entire stack is serverlerss as I have made it my mission to simplify and enhance the delivery of the projects. 
       Read my blog post on why you should start your project serverlerss on your next MVP`,
-      tags: ["vue cli",  "lambda", "api gateway", "dynamodb"],
+      tags: ["vue cli", "lambda", "api gateway", "dynamodb"],
       source: {
-        "type":"learn more",
-        "source":"http://agency-11.netlify.com/"
+        type: "learn more",
+        source: "http://agency-11.netlify.com/",
       },
-      img:agency,
-      status: "currently developing it"
+      img: agency,
+      status: "currently developing it",
     },
     {
       title: "Tskrr.",
@@ -71,11 +60,11 @@ Portfolio.defaultProps = {
       potential employers and clients my abilities. A full fledge app built by me,  fullstack from Database to CSS`,
       tags: ["vue cli", "django", "sass", "bullma"],
       source: {
-        "type":"learn more",
-        "source":"http://tskrr-app.herokuapp.com/"
+        type: "learn more",
+        source: "http://tskrr-app.herokuapp.com/",
       },
-      img:tskrrr,
-      status: "currently developing it"
+      img: tskrrr,
+      status: "currently developing it",
     },
     {
       title: "Freeloader.",
@@ -83,21 +72,22 @@ Portfolio.defaultProps = {
      
       `,
       tags: ["django", "nanobox", "nginx", "postgres"],
-      source:{
-        "type":"learn more",
-        "source":"http://freeloader.nanoapp.io"
+      source: {
+        type: "learn more",
+        source: "http://freeloader.nanoapp.io",
       },
-      img:freeloader,
+      img: freeloader,
     },
     {
       title: "Neighborhood.",
-      desc: "Created a fun engagin User interface where users can see all the interesting place in my local neighborhood",
+      desc:
+        "Created a fun engagin User interface where users can see all the interesting place in my local neighborhood",
       tags: ["knockout", "googleapi", "foursquare"],
-      source:{
-        "type":"source",
-        "source":"https://github.com/letorruella/neighborhood"
+      source: {
+        type: "source",
+        source: "https://github.com/letorruella/neighborhood",
       },
-     
+
       img: neighborhood,
     },
     {
@@ -106,18 +96,13 @@ Portfolio.defaultProps = {
       The user has the ability look for her/his favorite books and keep a track of them. Search the database, save them in different
        shelves(read, curreltly reading, want to read).`,
       tags: ["react", "reactrouter", "custom api"],
-      source:{
-        "type":"source",
-        "source":"https://github.com/letorruella/myreads"
+      source: {
+        type: "source",
+        source: "https://github.com/letorruella/myreads",
       },
-      img:myreads,
+      img: myreads,
     },
-  
-   
   ],
 }
 
 export default Portfolio
-
-
-

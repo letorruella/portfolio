@@ -26,3 +26,7 @@ Navigate to `localhost:8000`
 * Images Perfomance
 * Bring Users ;)
 * Wakatime Graphs
+
+## Follow the vision in Figma: 
+[Portoflio](https://www.figma.com/file/UnqfhgnDNeTsMvSvTPiTcwkb/Portfolio?node-id=0%3A1)
+![](portfolio-design.png)

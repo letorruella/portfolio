@@ -12,7 +12,6 @@ import { StaticQuery, graphql } from "gatsby"
 //import Header from "./header"
 import "./main.css"
 
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -26,7 +25,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        
         <div
           style={{
             margin: `0 auto`,
@@ -35,9 +33,8 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-        
           <main>{children}</main>
-        {/*  
+          {/*  
          <footer>
             © {new Date().getFullYear()}, Built with
             {` `}

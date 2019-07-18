@@ -10,53 +10,56 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-  
     <Layout>
-    <div 
-    style={{
-      "max-width":"850px",
-      "margin":'auto'
-    }}
-    className="blog-post-container">
-      <div 
-      style={{
-        "margin":"3rem"
-      }}
-      className="blog-post">
-      <div 
+      <div
         style={{
-        "display":"flex",
-        "justify-content":'space-between',
-        "margin-bottom" : "10rem"
+          "max-width": "850px",
+          margin: "auto",
         }}
-        >
-       <div 
-       style={{
-        "border-left": "6px solid",
-        "height": "20rem",
-        "border-left" : "1rem solid"
-       }}
-       class="vl"></div>
-        <h1 style={{
-          "text-align":"right",
-          "max-width": "35rem",
-          "font-size" : "5.5rem"
-        }}
-        >{ frontmatter.title }</h1>
-       </div>
+        className="blog-post-container"
+      >
         <div
           style={{
-            "font-size": "2.5rem",
-            "line-height":"1.5"
-            
+            margin: "3rem",
           }}
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+          className="blog-post"
+        >
+          <div
+            style={{
+              display: "flex",
+              "justify-content": "space-between",
+              "margin-bottom": "10rem",
+            }}
+          >
+            <div
+              style={{
+                height: "20rem",
+                "border-left": "1rem solid",
+              }}
+              class="vl"
+            />
+            <h1
+              style={{
+                "text-align": "right",
+                "max-width": "35rem",
+                "font-size": "5.5rem",
+              }}
+            >
+              {frontmatter.title}
+            </h1>
+          </div>
+          <div
+            style={{
+              "font-size": "2.5rem",
+              "line-height": "1.5",
+            }}
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
       </div>
-    </div>
-    
-    <Footer/>
+
+      <Footer />
     </Layout>
   )
 }
