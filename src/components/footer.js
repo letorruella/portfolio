@@ -26,7 +26,6 @@ const Footer = ({ siteTitle }) => (
   
     <div class="footer-info"
       style={{
-        margin: `0 auto`,
         'width': "50%",
         'text-align': 'right'
       }}
