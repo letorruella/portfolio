@@ -23,7 +23,13 @@ export default function BlogPage({}) {
         ]}
       />
       <Nav />
-      /* Postss?8/
+      <div
+      className="content"
+      style={{
+   
+      }}
+      >
+      </div>  
       <Footer />
     </Layout>
   )

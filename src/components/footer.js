@@ -3,29 +3,26 @@ import React from "react"
 
 const Footer = ({ siteTitle }) => (
   <footer
-    class="footer"
+    className="footer"
     style={{
       marginBottom: `1.45rem`,
+     
     }}
   >
     <div
-      style={{
-        width: "50%",
-      }}
-    >
-      <ul>
+    className="footer-left">
+      <ul className="pages">
         <li>Blog</li>
         <li>Portfolio</li>
         <li>Resume</li>
+        
       </ul>
+
     </div>
 
     <div
-      class="footer-info"
-      style={{
-        width: "50%",
-        "text-align": "right",
-      }}
+      className="footer-right footer-info"
+      
     >
       <p>
         made with :) <br /> by Luis Torruella
