@@ -44,9 +44,9 @@ Portfolio.defaultProps = {
       title: "Project 11",
       desc: `
       This is an exciting project that will give social infuencers the ability control their web presence.
-      The entire stack is serverlerss as I have made it my mission to simplify and enhance the delivery of the projects. 
-      Read my blog post on why you should start your project serverlerss on your next MVP`,
-      tags: ["vue cli", "lambda", "api gateway", "dynamodb"],
+      It is set for realeas August :D
+      `,
+      tags: ["vue cli", "graphql", "heroku", "django-restframework"],
       source: {
         type: "learn more",
         source: "http://agency-11.netlify.com/",
