@@ -44,7 +44,7 @@ Portfolio.defaultProps = {
       title: "Project 11",
       desc: `
       This is an exciting project that will give social infuencers the ability control their web presence.
-      It is set for realeas August :D
+      It is set for realease August :D
       `,
       tags: ["vue cli", "graphql", "heroku", "django-restframework"],
       source: {
