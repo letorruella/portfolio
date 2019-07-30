@@ -46,7 +46,7 @@ Portfolio.defaultProps = {
       This is an exciting project that will give social infuencers the ability control their web presence.
       It is set for realease August :D
       `,
-      tags: ["vue cli", "graphql", "heroku", "django-restframework"],
+      tags: ["vue cli", "graphql", "heroku", "django"],
       source: {
         type: "learn more",
         source: "http://agency-11.netlify.com/",
