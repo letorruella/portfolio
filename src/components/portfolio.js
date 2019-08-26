@@ -62,7 +62,7 @@ Portfolio.defaultProps = {
       tags: ["vue cli", "django", "sass", "bullma"],
       source: {
         type: "learn more",
-        source: "http://tskrr-app.herokuapp.com/",
+        source: "http://tskrr.herokuapp.com/company/sign-in/?next=/company/",
       },
       img: tskrrr,
       status: "currently developing it",
