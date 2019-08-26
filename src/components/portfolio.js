@@ -19,6 +19,7 @@ const Portfolio = ({ siteTitle, portfolios, data }) => (
           <a class="portfolio_info-source" href={portfolio.source.source}>
             {portfolio.source.type}
           </a>
+          
           <div class="tags">
             <br />
             {portfolio.tags.map(t => (
@@ -44,9 +45,9 @@ Portfolio.defaultProps = {
       title: "Project 11",
       desc: `
       This is an exciting project that will give social infuencers the ability control their web presence.
-      It is set for realease August :D
+      It is set for realease this fall :D
       `,
-      tags: ["vue cli", "graphql", "heroku", "django"],
+      tags: ["vue cli", "graphql", "node"],
       source: {
         type: "learn more",
         source: "http://agency-11.netlify.com/",
@@ -97,8 +98,8 @@ Portfolio.defaultProps = {
        shelves(read, curreltly reading, want to read).`,
       tags: ["react", "reactrouter", "custom api"],
       source: {
-        type: "source",
-        source: "https://github.com/letorruella/myreads",
+        type: "try it",
+        source: "https://my-reads-net.netlify.com/",
       },
       img: myreads,
     },
