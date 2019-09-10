@@ -86,7 +86,7 @@ Portfolio.defaultProps = {
       tags: ["knockout", "googleapi", "foursquare"],
       source: {
         type: "source",
-        source: "https://github.com/letorruella/neighborhood",
+        source: "https://letorruella.github.io/neighborhood/",
       },
 
       img: neighborhood,
