@@ -50,10 +50,10 @@ Portfolio.defaultProps = {
       tags: ["vue cli", "graphql", "node"],
       source: {
         type: "learn more",
-        source: "http://agency-11.netlify.com/",
+        source: "",
       },
       img: agency,
-      status: "currently developing it",
+      status: "under development",
     },
     {
       title: "Tskrr.",
@@ -65,7 +65,7 @@ Portfolio.defaultProps = {
         source: "http://tskrr.herokuapp.com/company/sign-in/?next=/company/",
       },
       img: tskrrr,
-      status: "currently developing it",
+      status: "under development",
     },
     {
       title: "Freeloader.",
