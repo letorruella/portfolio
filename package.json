@@ -30,8 +30,7 @@
     "react-typography": "^0.16.19",
     "recharts": "^1.5.0",
     "sharp": "^0.22.1",
-    "typography": "^0.16.19",
-    "webpack": "^2.5.1"
+    "typography": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.16.4",
