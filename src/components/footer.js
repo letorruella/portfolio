@@ -11,13 +11,13 @@ const Footer = ({ siteTitle }) => (
   >
     <div
     className="footer-left">
-      <ul className="pages">
+     {/* <ul className="pages">
         <li>Blog</li>
         <li>Portfolio</li>
         <li>Resume</li>
         
       </ul>
-
+      */}
     </div>
 
     <div
