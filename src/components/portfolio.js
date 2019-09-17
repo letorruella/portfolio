@@ -47,7 +47,7 @@ Portfolio.defaultProps = {
       This is an exciting project that will give social infuencers the ability control their web presence.
       It is set for realease this fall :D
       `,
-      tags: ["vue-cli", "graphql", "node"],
+      tags: ["vue", "graphql", "node"],
       source: {
         type: "learn more",
         source: "",
@@ -59,7 +59,7 @@ Portfolio.defaultProps = {
       title: "Tskrr.",
       desc: `What started as a basic backend for a "Uber Eats" clone for truckdrivers is getting developed further to show 
       potential employers and clients my abilities. A full fledge app built by me,  fullstack from Database to CSS`,
-      tags: ["vue cli", "django", "sass", "bullma"],
+      tags: ["react", "django", "bullma"],
       source: {
         type: "learn more",
         source: "http://tskrr.herokuapp.com/company/sign-in/?next=/company/",
