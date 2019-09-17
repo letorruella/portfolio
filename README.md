@@ -26,6 +26,7 @@ Navigate to `localhost:8000`
 * Images Perfomance
 * Bring Users ;)
 * Wakatime Graphs
+* Optimize for iPad
 
 ## Follow the vision in Figma: 
 [Portfolio](https://www.figma.com/file/UnqfhgnDNeTsMvSvTPiTcwkb/Portfolio?node-id=0%3A1)

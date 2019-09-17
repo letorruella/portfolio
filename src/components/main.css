@@ -223,7 +223,7 @@ img {
 /** Media Queries **/
 
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .main {
 
         height: 65vh;
@@ -264,6 +264,8 @@ img {
     .portfolio_info {
         grid-column: 1/-1;
         width: 100%;
+        margin: auto;
+        max-width: 640px;
         padding: 1rem;
     }
 

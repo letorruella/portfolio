@@ -47,7 +47,7 @@ Portfolio.defaultProps = {
       This is an exciting project that will give social infuencers the ability control their web presence.
       It is set for realease this fall :D
       `,
-      tags: ["vue cli", "graphql", "node"],
+      tags: ["vue-cli", "graphql", "node"],
       source: {
         type: "learn more",
         source: "",
@@ -78,6 +78,7 @@ Portfolio.defaultProps = {
         source: "http://freeloader.nanoapp.io",
       },
       img: freeloader,
+      status: "being tested",
     },
     {
       title: "Neighborhood.",
@@ -88,8 +89,9 @@ Portfolio.defaultProps = {
         type: "source",
         source: "https://letorruella.github.io/neighborhood/",
       },
-
+      
       img: neighborhood,
+      status: "finished",
     },
     {
       title: "My Reads.",
@@ -102,6 +104,7 @@ Portfolio.defaultProps = {
         source: "https://my-reads-net.netlify.com/",
       },
       img: myreads,
+      status: "finished",
     },
   ],
 }
