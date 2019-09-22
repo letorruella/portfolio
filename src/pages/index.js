@@ -1,5 +1,5 @@
 import React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -23,7 +23,8 @@ const IndexPage = () => (
       ]}
     />
     <div>
-      {/*
+   
+     
       <nav class="nav">
         <Link class="link" to="/resume">
           {" "}
@@ -35,12 +36,12 @@ const IndexPage = () => (
           Portfolio.{" "}
         </Link>
         <br />
-       <Link class="link" to="/resume">
+       <Link class="link" to="/blog">
           {" "}
           Blog.{" "}
     </Link> 
       </nav>
-
+ {/*
     <BGGraph />
 */}
 

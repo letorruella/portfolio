@@ -3,42 +3,25 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Nav = ({ siteTitle }) => (
-  <nav
-    style={{
-      width: "100%",
-      height: "10rem",
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        display: "grid",
-        "grid-template-columns": "30% 70%",
-        width: "100%",
-        height: "100%",
-      }}
-    >
-      <ul
-        className="pages"
-        style={{
-          "margin-top": "2rem",
-        }}
-      >
-        <li>Resume</li>
-        <li>Portfolio</li>
-        <li className="current-page">Blog</li>
-      </ul>
-      <h1
-        style={{
-          "grid-column": "2/-1",
-          "text-align": "right",
-          "margin-top": "2rem",
-          "font-size": "3.5rem",
-        }}
-      >
-        Luis Torruella.
-      </h1>
+  <nav class="nav">
+    <div>
+      <Link class="link" to="/resume">
+        {" "}
+        Resume.{" "}
+      </Link>
+      <br />
+      <Link class="link" to="/">
+        {" "}
+        Portfolio.{" "}
+      </Link>
+      <br />
+      <Link class="link" to="/blog">
+        {" "}
+        Blog.{" "}
+      </Link>
     </div>
+
+    <h1 class="">Luis Torruella.</h1>
   </nav>
 )
 

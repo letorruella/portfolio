@@ -16,6 +16,7 @@ html {
 body {
     font-family: 'Slabo 27px', serif;
     font-size: 1.6rem;
+   
     /* Default Font Size*/
 }
 
@@ -23,9 +24,17 @@ body {
 
 /** NAV **/
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 96rem;
+    margin: auto;
+}
+
 .link {
     text-decoration: none;
 }
+
 
 nav a {
     color: #aaaaaa;

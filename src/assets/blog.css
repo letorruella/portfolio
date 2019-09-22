@@ -1,0 +1,24 @@
+.content{
+    max-width: 96rem;
+    margin: auto;
+    margin-top:10rem;
+}
+.content .section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .section .section-heading{
+    max-width: 30%;
+    font-size:3rem;
+} 
+
+.content .section .section-heading .dots{
+    margin-left: 1rem;
+}
+
+.content .section  .section-summary{
+    max-width: 50%;
+    font-size: 2rem;
+}
+
