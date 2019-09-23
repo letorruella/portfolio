@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Portfolio from "../components/portfolio"
 import Footer from "../components/footer"
+import Nav from '../components/nav'
 
 //import BGGraph from "../components/bg-graph"
 //import { Link } from "gatsby"
@@ -26,7 +27,7 @@ const IndexPage = () => (
    
      
       <nav class="nav">
-        <Link class="link" to="/resume">
+       {/* <Link class="link" to="/resume">
           {" "}
           Resume.{" "}
         </Link>
@@ -36,6 +37,7 @@ const IndexPage = () => (
           Portfolio.{" "}
         </Link>
         <br />
+        */}
        <Link class="link" to="/blog">
           {" "}
           Blog.{" "}

@@ -5,7 +5,7 @@ import React from "react"
 const Nav = ({ siteTitle }) => (
   <nav class="nav">
     <div>
-      <Link class="link" to="/resume">
+     {/* <Link class="link" to="/resume">
         {" "}
         Resume.{" "}
       </Link>
@@ -15,13 +15,15 @@ const Nav = ({ siteTitle }) => (
         Portfolio.{" "}
       </Link>
       <br />
+    */}  
       <Link class="link" to="/blog">
         {" "}
         Blog.{" "}
       </Link>
     </div>
 
-    <h1 class="">Luis Torruella.</h1>
+    <h1 class=""> <Link className="link brand" to="/" >Luis Torruella. </Link></h1>
+    
   </nav>
 )
 

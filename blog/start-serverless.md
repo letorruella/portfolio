@@ -3,6 +3,7 @@ title: Start Serverless.
 date: 2019-07-17
 path: /blog/start-serverless
 author: Luis Torruella
+summary: When creating web projects start serverless. For those who don’t know what serverless is allow me to explain.Serverless is an architecture that where you don’t manage servers. Don’t take the name the serverless literal though because there is servers but they are managed by vendors such
 ---
 
 

@@ -20,6 +20,11 @@ body {
     /* Default Font Size*/
 }
 
+.brand{
+    color:black !important;
+}
+.date{color: #aaaaaa;float: right;}
+
 
 
 /** NAV **/
@@ -200,6 +205,38 @@ img {
 .portfolio_container:nth-child(even)>img {
     grid-column: 1/4;
 }
+
+
+/*
+
+Blog
+**/
+
+
+.content{
+    max-width: 96rem;
+    margin: auto;
+    margin-top:10rem;
+}
+.content .section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .section .section-heading{
+    max-width: 30%;
+    font-size:3rem;
+} 
+
+.content .section .section-heading .dots{
+    margin-left: 1rem;
+}
+
+.content .section  .section-summary{
+    max-width: 50%;
+    font-size: 2rem;
+}
+
 
 
 /***CONTENT**/
