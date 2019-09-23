@@ -26,8 +26,9 @@ const IndexPage = () => (
     <div>
    
      
+       {/* 
       <nav class="nav">
-       {/* <Link class="link" to="/resume">
+       <Link class="link" to="/resume">
           {" "}
           Resume.{" "}
         </Link>
@@ -37,13 +38,12 @@ const IndexPage = () => (
           Portfolio.{" "}
         </Link>
         <br />
-        */}
        <Link class="link" to="/blog">
           {" "}
           Blog.{" "}
     </Link> 
       </nav>
- {/*
+      
     <BGGraph />
 */}
 
