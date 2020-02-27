@@ -52,12 +52,12 @@ const IndexPage = () => (
           <h1 class="main-container_title">Luis Torruella.</h1>
           <p class="main-container_subtitle">
             {" "}
-            I help companies make the best products in the web{" "}
+            I make stuff with computer tech{" "}
           </p>
         </div>
       </div>
 
-      <Portfolio />
+     {/* <Portfolio />*/}
 
       <Footer />
     </div>
