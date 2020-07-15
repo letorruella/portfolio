@@ -1,9 +1,8 @@
-const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `Luis Torruella Web developer`,
-    description: `I help companies create the best products in the web`,
+    title: `The Box Way Show`,
+    description: `Watch Speed Videos From Over My shoulder`,
     author: `Luis Enrique Torruella`,
   },
   plugins: [  
@@ -12,7 +11,17 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Slabo+27px`,
+            family: `Roboto`,
+            "variants": [
+              "400",
+              "400i",
+              "700",
+              "700i",
+              "900"
+            ],
+            "subsets": [
+              "latin-ext"
+            ]
           },
          
         ],
