@@ -1,12 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import Portfolio from "../components/portfolio"
+//import Portfolio from "../components/portfolio"
 import Footer from "../components/footer"
-import Nav from '../components/nav'
+import Main from "../pages/pagesComponents/main"
+import { Link } from "gatsby"
+//import Nav from '../components/nav'
 
 //import BGGraph from "../components/bg-graph"
 //import { Link } from "gatsby"
@@ -24,8 +26,9 @@ const IndexPage = () => (
       ]}
     />
     <div>
-   
-     
+      <Link class="link" to="/">
+       <Main/>
+      </Link>
        {/* 
       <nav class="nav">
        <Link class="link" to="/resume">
@@ -41,11 +44,12 @@ const IndexPage = () => (
        <Link class="link" to="/blog">
           {" "}
           Blog.{" "}
+          
     </Link> 
       </nav>
       
     <BGGraph />
-*/}
+ 
 
       <div class="main">
         <div class="main-container">
@@ -58,6 +62,9 @@ const IndexPage = () => (
       </div>
 
      {/* <Portfolio />*/}
+
+
+
 
       <Footer />
     </div>

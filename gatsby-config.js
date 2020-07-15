@@ -35,8 +35,7 @@ module.exports = {
           name: "blog",
         },
       },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp' , 
+   
 
   
     `gatsby-transformer-remark`,
