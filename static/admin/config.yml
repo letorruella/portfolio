@@ -9,19 +9,11 @@ public_folder: assets
 collections:
   - name: Blog
     label: Blog
-    folder: blog
+    folder: publishing/blog
     create: true
     slug: "{{slug}}-{{month}}-{{day}}-{{year}}"
     fields:
       - { name: title, label: Title }
       - { name: date, label: Date, widget: date }
       - { name: path, label: Path}
-
-  - name: Resume
-    label: Resume
-    folder: resume
-    create: true
-    slug: "{{slug}}-{{month}}-{{day}}-{{year}}"
-    fields:
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }    
+    

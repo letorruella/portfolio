@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path")
 
 module.exports = {
   siteMetadata: {
@@ -6,7 +6,7 @@ module.exports = {
     description: `I help companies create the best products in the web`,
     author: `Luis Enrique Torruella`,
   },
-  plugins: [  
+  plugins: [
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
@@ -14,7 +14,6 @@ module.exports = {
           {
             family: `Slabo+27px`,
           },
-         
         ],
       },
     },
@@ -23,28 +22,26 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images` ,
+        path: `${__dirname}/src/images`,
       },
     },
 
-     
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          path: `${__dirname}/blog`,
-          name: "blog",
-        },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name:'blog',
+        path: `${__dirname}/publishing/blog`,
       },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp' , 
-
-  
+    },
     `gatsby-transformer-remark`,
-   
+
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+
     `gatsby-plugin-netlify-cms`,
-    
+
     `gatsby-plugin-react-helmet`,
- 
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -56,7 +53,6 @@ module.exports = {
         display: `minimal-ui`,
         //icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    }, 
-   
+    },
   ],
 }

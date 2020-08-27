@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+//import Layout from "../components/layout"
 import Footer from "../components/footer"
 
 export default function Template({
@@ -10,7 +10,7 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout>
+    <div>
       <div
         style={{
           "max-width": "850px",
@@ -63,7 +63,7 @@ export default function Template({
       </div>
 
       <Footer />
-    </Layout>
+    </div>
   )
 }
 

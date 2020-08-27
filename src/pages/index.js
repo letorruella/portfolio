@@ -23,6 +23,7 @@ const IndexPage = () => (
       ]}
     />
     <div>
+      
       {/*
       <nav class="nav">
         <Link class="link" to="/resume">
