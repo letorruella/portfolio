@@ -10,8 +10,13 @@ collections:
   - name: Blog
     label: Blog
     folder: publishing/blog
+    media_folder: "static/images/uploads"
+    public_folder: "/images/uploads"
+    publish_mode: editorial_workflow
     create: true
     slug: "{{slug}}-{{month}}-{{day}}-{{year}}"
+    preview_path: "blog/{{name}}"
+
     fields:
       - { name: title, label: Title }
       - { name: date, label: Date, widget: date }
