@@ -7,7 +7,7 @@ module.exports = {
     author: `Luis Enrique Torruella`,
   },
   plugins: [
-    {
+   /* {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
@@ -16,29 +16,14 @@ module.exports = {
           },
         ],
       },
-    },
+    },*/
 
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name:'blog',
-        path: `${__dirname}/publishing/blog`,
-      },
-    },
     `gatsby-transformer-remark`,
 
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
 
-    `gatsby-plugin-netlify-cms`,
+  
 
     `gatsby-plugin-react-helmet`,
 

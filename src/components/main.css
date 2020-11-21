@@ -5,11 +5,12 @@
     padding: 0;
     box-sizing: inherit;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+    
     /* 10px/16px  =  65.5% > 1rem = 10px*/
 }
 

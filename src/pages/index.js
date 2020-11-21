@@ -23,34 +23,13 @@ const IndexPage = () => (
       ]}
     />
     <div>
-      
-      {/*
-      <nav class="nav">
-        <Link class="link" to="/resume">
-          {" "}
-          Resume.{" "}
-        </Link>
-        <br />
-       <Link class="link" to="/resume">
-          {" "}
-          Portfolio.{" "}
-        </Link>
-        <br />
-       <Link class="link" to="/resume">
-          {" "}
-          Blog.{" "}
-    </Link> 
-      </nav>
-
-    <BGGraph />
-*/}
-
-      <div class="main">
-        <div class="main-container">
-          <h1 class="main-container_title">Luis Torruella.</h1>
-          <p class="main-container_subtitle">
+      <div className="main">
+        <div className="main-container">
+          <h1 className="main-container_title">Luis Torruella.</h1>
+          <p className="main-container_subtitle">
             {" "}
-            I help companies make the best products in the web{" "}
+            I create value with tech
+            {" "}
           </p>
         </div>
       </div>
