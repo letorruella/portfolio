@@ -203,11 +203,9 @@ img {
 
 /** FOOTER **/
 .footer {
-    margin: auto;
     display: grid;
     padding: 1rem;
     grid-template-columns: 50% 50%;
-
 }
 
 .footer-left {
@@ -302,3 +300,53 @@ img {
 
 
 }
+
+.javascriptmas-container{
+    
+    
+    max-width: 750px;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+}
+.javascriptmas-container .content{
+    margin: 10px;
+    border: 1px solid #000000;
+}
+
+
+.javascriptmas-container .content .top{
+        margin-top: 50px;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        height: 250px;
+}
+.top h1{
+    margin: 15px;
+    font-size: 4rem;
+}
+
+.top h3{
+    font-size: 2rem;
+}
+
+.javascriptmas-container .bottom{
+    margin: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.bottom ol{
+    list-style-type: none;
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+}
+.bottom ol li {
+   
+    margin: 20px;
+}
+
+.bottom ol li a{ color: #000000;}
