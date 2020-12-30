@@ -25,9 +25,22 @@ const Footer = ({ siteTitle }) => (
       
     >
       <p>
-        made with :) <br /> by Luis Torruella
+        made with :) 
+        
+        
       </p>
-
+      <a style={{'color':'rgb(107, 107, 107)', 'font-size':'1.7rem' }} href="/">Luis Torruella</a>
+      <br/>
+      <a
+        href="mailto:letorruella@gmail.com"
+        style={{
+          color: `blue`,
+          textDecoration: `none`,
+        }}
+      >
+        gmail
+      </a>
+        <br/>
       <a
         href="https://github.com/letorruella"
         style={{
@@ -35,7 +48,7 @@ const Footer = ({ siteTitle }) => (
           textDecoration: `none`,
         }}
       >
-        github.com
+        github
       </a>
       <br />
       <a
@@ -45,7 +58,7 @@ const Footer = ({ siteTitle }) => (
           textDecoration: `none`,
         }}
       >
-        linkedin.com
+        linkedin
       </a>
     </div>
   </footer>

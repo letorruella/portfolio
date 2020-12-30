@@ -63,6 +63,74 @@ JavaScriptmas.defaultProps = {
     {
       title:'Count Vowel',
       url:'https://scrimba.com/scrim/co9484b048f6f5694c64f61d9'
+    },
+    {
+      title:'The Rolling Dice',
+      url: 'https://scrimba.com/scrim/co60148fb9b02dd19e03237ebç'
+    },
+    {
+      title:'Some Odd Fibonacci Numbers',
+      url: 'https://scrimba.com/scrim/co249416fa313d0ebbd92c507'
+    },
+    {
+      title:'Adjancent Elements Product',
+      url: 'https://scrimba.com/scrim/cof614608885c233eb81ae844'
+    },
+    {
+      title:'Advoid Obstacle',
+      url: 'https://scrimba.com/scrim/co1d24d9d8cb89cfad29d18ad'
+    },
+    {
+      title:'Extract Each Kth',
+      url: 'https://scrimba.com/scrim/coa4b46b3b61174f0605ec8f2'
+    },
+    {
+      title:'Maximal Adjacent Difference',
+      url: 'https://scrimba.com/scrim/co74e4b0385146774c2a4587b'
+    },
+    {
+      title:'Carousel',
+      url: 'https://scrimba.com/scrim/co84644e582985949ece05196'
+    },
+    {
+      title:'Insert Dashes',
+      url: 'https://scrimba.com/scrim/cocba4b2f8ad3ec753a8dda7a'
+    },
+    {
+      title:'Maximal Adjacent Difference',
+      url: 'https://scrimba.com/scrim/co74e4b0385146774c2a4587b'
+    },
+    {
+      title:'Different Symbols Naive',
+      url: 'https://scrimba.com/scrim/co7824d47be5545c3340d8b62'
+    },
+    {
+      title:'Array Previous Less',
+      url: 'https://scrimba.com/scrim/co2084138a5515079759bf40d'
+    },
+    {
+      title:'Alphabet Subsequence',
+      url: 'https://scrimba.com/scrim/co47b4cb58b2d640b60538f6b'
+    },
+    {
+      title:'Domain Type',
+      url: 'https://scrimba.com/scrim/cod8549a1aaa46e1ec32f5b5d'
+    },
+    {
+      title:'Sum Of Two',
+      url: 'https://scrimba.com/scrim/coc2e4df4aa8d071a03fdc4da'
+    },
+    {
+      title:'Extract Matrix Column',
+      url: 'https://scrimba.com/scrim/coa6f4d3f98597f6ee60a4812'
+    },
+    {
+      title:'Social Media Input',
+      url: 'https://scrimba.com/scrim/coa51493a8a01a8d8cab3907f'
+    },
+    {
+      title:'Test Your Agility',
+      url:'https://scrimba.com/scrim/co98d4bd8869f56e10f5beb5e'
     }
   ],
 }
