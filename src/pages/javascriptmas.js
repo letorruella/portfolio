@@ -1,10 +1,10 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Footer from "../components/footer"
+import '../components/main.css';
 
 function JavaScriptmas(props) {
   const { links } = props
-  console.log(links)
   return (
     <>
       <div className="javascriptmas-container">
