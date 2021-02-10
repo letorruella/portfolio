@@ -26,11 +26,7 @@ const IndexPage = () => (
       <div className="main">
         <div className="main-container">
           <h1 className="main-container_title">Luis Torruella.</h1>
-          <p className="main-container_subtitle">
-            {" "}
-            I create value with tech
-            {" "}
-          </p>
+          <p className="main-container_subtitle"> I create value with tech </p>
         </div>
       </div>
 
