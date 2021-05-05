@@ -28,5 +28,5 @@ Navigate to `localhost:8000`
 * Wakatime Graphs
 
 ## Follow the vision in Figma: 
-[Portfolio](https://www.figma.com/file/UnqfhgnDNeTsMvSvTPiTcwkb/Portfolio?node-id=0%3A1)
+[Portfolio](https://www.figma.com/file/UnqfhgnDNeTsMvSvTPiTcwkb/Portfolio?node-id=746%3A34)
 ![](portfolio-design.png)
