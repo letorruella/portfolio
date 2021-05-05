@@ -99,7 +99,7 @@ Portfolio.defaultProps = {
       tags: ["react", "reactrouter", "custom api"],
       source: {
         type: "try it",
-        source: "https://my-reads-net.netlify.com/",
+        source: "https://my-readsss.netlify.app/",
       },
       img: myreads,
     },
