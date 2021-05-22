@@ -6,8 +6,8 @@
 
 Run Local Server:
 
- * `npm install`
- * `npm run develop`
+ * `yarn`
+ * `yarn develop`
 
 Navigate to `localhost:8000`
 

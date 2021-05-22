@@ -7,28 +7,8 @@ module.exports = {
     author: `Luis Enrique Torruella`,
   },
   plugins: [
-   /* {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Slabo+27px`,
-          },
-        ],
-      },
-    },*/
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
-      },
-    },
-
-    `gatsby-transformer-remark`,
-
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+   
+   
 
   
 
