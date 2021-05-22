@@ -1,44 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: "main",
-    author: "Luis Torruella"
+    title: 'Gatsby Storybook Starter',
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        trackingId: "G-D27W4H66ZR",
+        name: 'Gatsby Storybook Starter',
+        short_name: 'Gatsby Storybook Starter',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#744C9E',
+        display: 'standalone',
+        icon: 'src/assets/logos/icon.png',
+      },
+    }, {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/`,
+        name: 'src',
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: "./src/pages/",
-      },
-      __key: "pages",
-    },
+    'gatsby-plugin-root-import',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-offline',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-styled-components',
   ],
 };

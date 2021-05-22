@@ -6,10 +6,14 @@
 
 Run Local Server:
 
- * `yarn`
- * `yarn develop`
+ * `npm install`
+ * `npm run develop`
 
-Navigate to `localhost:8000`
+Navigate to: 
+SITE:  `localhost:8000` 
+GRAPH: `localhost:8000/___graphl`
+CMS:   `localhost:8000/admin`
+
 
 ### Features
 * Portfolio

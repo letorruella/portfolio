@@ -1,3 +1,9 @@
-node_modules/
-.cache/
-public
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public
+/storybook
+.DS_Store

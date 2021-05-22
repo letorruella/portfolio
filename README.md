@@ -1,36 +1,37 @@
-# Portfolio 
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="./src/assets/images/cover.png" width="600" />
+  </a>
+</p>
+<h1 align="center">
+  GatsbyJS + Storybook Starter
+</h1>
+<p align="center">
+  Gatsby starter that uses Storybook + additional set of tools listed bellow, and provides an easy to start structure to get you up and running with your Gatsby powered site.
+</p>
 
-## This website was boostrapped with gtasby.js
+##  What's inside?
 
-### Installation 
+- Gatsby (v2)
+- Storybook (v5)
+- Styled Components (v4)
+- Styled Reset (Advanced)
+- Netlify Conf
+- Eslint
 
-Run Local Server:
+## Quick start
+```bash
+$ gatsby new my-awesome-site https://github.com/markoradak/gatsby-starter-storybook
 
- * `npm install`
- * `npm run develop`
+$ cd my-awesome-site
+$ yarn start || yarn develop
+```
 
-Navigate to: 
-SITE:  `localhost:8000` 
-GRAPH: `localhost:8000/___graphl`
-CMS:   `localhost:8000/admin`
+## Deploy
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markoradak/gatsby-starter-storybook)
 
-### Features
-* Portfolio
+## License
 
-
-
-### Upcoming
-* Nightmode
-* Blog
-* CSS refactor to SASS
-* Perfomance
-* SEO
-* Resume
-* Images Perfomance
-* Bring Users ;)
-* Wakatime Graphs
-
-## Follow the vision in Figma: 
-[Portfolio](https://www.figma.com/file/UnqfhgnDNeTsMvSvTPiTcwkb/Portfolio?node-id=0%3A1)
-![](portfolio-design.png)
+Licensed under the MIT License, Copyright © 2018 Marko Radak.  
+See [license](LICENSE) for more information.
