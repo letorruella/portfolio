@@ -6,14 +6,10 @@
 
 Run Local Server:
 
- * `npm install`
- * `npm run develop`
+ * `yarn`
+ * `yarn develop`
 
-Navigate to: 
-SITE:  `localhost:8000` 
-GRAPH: `localhost:8000/___graphl`
-CMS:   `localhost:8000/admin`
-
+Navigate to `localhost:8000`
 
 ### Features
 * Portfolio
@@ -32,5 +28,5 @@ CMS:   `localhost:8000/admin`
 * Wakatime Graphs
 
 ## Follow the vision in Figma: 
-[Portfolio](https://www.figma.com/file/UnqfhgnDNeTsMvSvTPiTcwkb/Portfolio?node-id=746%3A34)
+[Portfolio](https://www.figma.com/file/UnqfhgnDNeTsMvSvTPiTcwkb/Portfolio?node-id=0%3A1)
 ![](portfolio-design.png)

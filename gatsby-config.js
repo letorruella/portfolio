@@ -1,50 +1,44 @@
-const path = require("path")
-
 module.exports = {
   siteMetadata: {
-    title: `Luis Torruella Web developer`,
-    description: `I help companies create the best products in the web`,
-    author: `Luis Enrique Torruella`,
+    title: "main",
+    author: "Luis Torruella"
   },
   plugins: [
-   /* {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Slabo+27px`,
-          },
-        ],
-      },
-    },*/
+    "gatsby-plugin-netlify-cms",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-image",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
+        trackingId: "G-D27W4H66ZR",
       },
     },
-
-    `gatsby-transformer-remark`,
-
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
+    "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-
-  
-
-    `gatsby-plugin-react-helmet`,
-
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#ffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        //icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        name: "images",
+        path: "./src/images/",
       },
+      __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
     },
   ],
-}
+};
